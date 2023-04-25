@@ -1,0 +1,510 @@
+body {font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+   background-image: url('image/Augusta_12Th_hole.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: relative; /* Required for pseudo-element to position properly */
+
+  }
+
+  body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust opacity to make it darker */
+    pointer-events: none; /* Allows clicks and other events to pass through */
+}
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  div {
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #FFF;
+    border: 1px solid #999;
+  }
+  
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #e90a0a;
+    color: #FFF;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: rgb(170, 155, 155);
+  }
+
+  /* Footer styling */
+
+  footer {
+    background-color: transparent;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9; /* Set the opacity to 70% */
+  }
+  
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  button:last-child {
+    margin-right: 0;
+  }
+  
+
+  /* Header Styling */
+  header {
+    background-color: transparent;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  header img {
+    float: left;
+    margin-left: 10px;
+  }
+  
+  header button {
+    float: right;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  header button:hover {
+    background-color: #3e8e41;
+  }
+  
+
+/* Grid Styles */
+
+<style>
+  .ballImage, .ballDescription, .buttonClass, .sellerInformation, .paymentinformation {
+    padding: 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* define 3 columns of equal width */
+    grid-template-rows: auto auto auto auto; /* define 4 rows of auto height */
+    gap: 10px; /* add a 10px gap between cells */
+  }
+  
+  .ballImage {
+    grid-row: 1 / 2; /* place in the first row */
+    grid-column: 1 / 2; /* span the first column */
+  }
+  
+  .ballDescription {
+    grid-row: 1 / 2; /* place in the first row */
+    grid-column: 2 / 4; /* span columns 2 through 3 */
+  }
+  
+  .buttonClass {
+    grid-row: 2 / 3; /* place in the second row */
+    grid-column: 1 / 4; /* span all columns */
+    display: flex; /* enable flexbox layout */
+    justify-content: center; /* center contents horizontally */
+  }
+  
+  
+  .sellerInformation {
+    grid-row: 3 / 4; /* place in the third row */
+    grid-column: 1 / 4; /* span all columns */
+  }
+  
+  .paymentinformation {
+    grid-row: 4 / 5; /* place in the fourth row */
+    grid-column: 1 / 4; /* span all columns */
+  }
+
+/* Style the nav bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50;
+  color: transparent;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Style the nav links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-links li a:hover {
+  color: #ccc;
+}
+
+/* Style the search form */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.search-form button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #333;
+}
+
+
+/* Style the search form */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.search-form button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #333;
+}
+
+
+  /* Buy and Sell buttons on front page  */
+
+  main {
+    background-image: url("image\Augusta_12Th_hole.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    float: left;
+  
+  }
+  
+
+
+  .buy-button,
+  .sell-button {
+    padding: 12px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: rgb(228, 15, 15);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .buy-button:hover,
+  .sell-button:hover {
+    background-color: black;
+    color: rgb(228, 15, 15);
+  }
+  
+
+    
+  .coverDown {
+    margin-top: 100px;
+  }
+  
+
+  /* Transparent Table */
+
+  .transparent-table {
+    opacity: 0.9; /* Set the opacity to 70% */
+  }
+.find-balls {
+  display: flex;
+  justify-content: center; /* Center the child element horizontally */
+  align-items: center; /* Center the child element vertically */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+th {
+  background-color: #cccccc;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+ 
+#find-button {
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  background-color: transparent;
+  border: none;
+}
+
+input[type="submit"] {
+  background-color: #d81d1d;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #b3b3b3;
+} 
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+
+.browse-button, .sell-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.browse-button:hover, .sell-button:hover {
+  background-color: white;
+  color: red;
+}
+
+.premiumBallButtons {
+  background-color: transparent;
+  border: none;
+}
+
+<style>
+        /* Add CSS to make background of header transparent */
+        header {
+          background-color: transparent;
+        }
+      </style>
+
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .button-container a {
+        margin-right: 10px;
+      }
+    
+      .sell-button {
+        background-color: green;
+        color: white;
+      }
+
+      /* Add CSS for animation */
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  /* Grid Styles */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* define 3 columns of equal width */
+  grid-template-rows: auto auto auto auto; /* define 4 rows of auto height */
+  gap: 10px; /* add a 10px gap between cells */
+}
+
+.ballImage, .ballDescription, .buttonClass, .sellerInformation, .paymentinformation {
+  padding: 10px;
+}
+
+.ballImage {
+  grid-row: 1 / 2; /* place in the first row */
+  grid-column: 1 / 2; /* span the first column */
+}
+
+.ballDescription {
+  grid-row: 1 / 2; /* place in the first row */
+  grid-column: 2 / 4; /* span columns 2 through 3 */
+}
+
+.buttonClass {
+  grid-row: 2 / 3; /* place in the second row */
+  grid-column: 1 / 4; /* span all columns */
+  display: flex; /* enable flexbox layout */
+  justify-content: center; /* center contents horizontally */
+}
+
+.sellerInformation {
+  grid-row: 3 / 4; /* place in the third row */
+  grid-column: 1 / 4; /* span all columns */
+}
+
+.paymentinformation {
+  grid-row: 4 / 5; /* place in the fourth row */
+  grid-column: 1 / 4; /* span all columns */
+}
+
+/* Style the nav bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50;
+  color: transparent;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Style the nav links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-links li a:hover {
+  color: #ccc;
+}
+
+/* Style the search form */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.search-form button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #3e8e41;
+}
+
+
+    
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find Balls</title>
+  <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="CSS/stylesheet2.css" />
+  <script src="JS/index.js"></script>
+
+  <style>
+    header {
+        background-color: transparent; /* Set background color to transparent */
+    }
+
+    .coverDown {
+            width: 33%; /* Set width to 33% */
+            color: white; /* Set text color to white */
+            font-size: 24px; /* Set font size to 24 pixels */
+
+        }
+    </style>  
+
+</head>
+
+<script>
+
+    document.getElementById("findBallsLink").addEventListener("click", function(event) {
+      event.preventDefault();
+      var mainContent = document.getElementById("mainContent");
+      mainContent.innerHTML = "Balls found!";
+    });
+  </script>
+<body style="background-image: url('image/Augusta_12Th_hole.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+ <header>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>   
+            <li><a href="#" id="findBallsLink">Find Balls</a></li>
+            <li><a href="#">Sell Balls</a></li>
+            <li><a href="#">Sign in/Register</a></li>
+          </ul>
+          <form class="search-form">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Go</button>
+          </form>
+        </nav>      
+      </header>
+<main style="margin-left: 10%" id="mainContent">
+  <h1 style="color: white">The Golf Gator Presents</h1>
+  <h1 style="color: white">Golf Ball Heaven</h1>
+  <p class="coverDown">Welcome to Golf Ball Heaven, where you can find the best selection of used golf balls for any skill level. Whether you're a beginner or a pro, we've got you covered. Browse our collection and find your perfect match today!</p>
+ 
+ 
+    
+  <div class="button-container">
+    <a href="Find_Balls" class="browse-button">Browse</a>
+    <a href="Sell_Balls" class="sell-button">Sell Balls</a>
+  </div>
+  
+
+
+
+<script>
+  document.getElementById("findBallsLink").addEventListener("click", function(event) {
+    event.preventDefault();
+    var mainContent = document.getElementById("mainContent");
+    mainContent.innerHTML = `
+    <div class="premiumBallButtons">
+      <h2 style="color: white;">Find Premium Used Balls <bl></bl>(Mint Condition)</h2>
+      <button>Titleist Pro V1</button>
+      <button>Titleist Pro V1X</button>
+      <button>Callaway Chrome</button>
+      <button>Pinnacle Rush</button>
+      <button>TaylorMade TP5</button>
+      <button>Bridgestone Tour B X</button>
+    </div>
+    <div>
+  <html>
+    <head>
+        <title>Golf Ball Comparison Grid</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Condition</th>
+                <th>Color</th>
+                <th>Titleist</th>
+                <th>Callaway</th>
+                <th>TaylorMade</th>
+                <th>Bridgestone</th>
+                <th>Srixon</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="AAAAA" value="AAAAA">AAAAA (Mint Condition)</td>
+                <td><input type="checkbox" name="White" value="White">White</td>
+                <td><input type="checkbox" name="Pro V1X" value="Pro V1X">Pro V1X</td>
+                <td><input type="checkbox" name="Chrome Soft" value="Chrome Soft">Chrome Soft</td>
+                <td><input type="checkbox" name="TP5X" value="TP5X">TP5X</td>
+                <td><input type="checkbox" name="Tour B-XS" value="Tour B-XS">Tour B-XS</td>
+                <td><input type="checkbox" name="Z-Star XV" value="Z-Star XV">Z-Star XV</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="AAAA" value="AAAA">AAAA (Very Good Condition)</td>
+                <td><input type="checkbox" name="Yellow" value="Yellow">Yellow</td>
+                <td><input type="checkbox" name="Pro V1" value="Pro V1">Pro V1</td>
+                <td><input type="checkbox" name="Supersoft" value="Supersoft">Supersoft</td>
+                <td><input type="checkbox" name="Tour Response" value="Tour Response">Tour Response</td>
+                <td><input type="checkbox" name="Tour B-RX" value="Tour B-RX">Tour B-RX</td>
+                <td><input type="checkbox" name="Q-Star" value="Q-Star">Q-Star</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="AAA" value="AAA">AAA (Good Condition)</td>
+                <td><input type="checkbox" name="Red" value="Red">Red</td>
+                <td><input type="checkbox" name="AVX" value="AVX">AVX</td>
+                <td><input type="checkbox" name="ERC Soft" value="ERC Soft">ERC Soft</td>
+                <td><input type="checkbox" name="Soft Response" value="Soft Response">Soft Response</td>
+                <td><input type="checkbox" name="Tour B-RXS" value="Tour B-RXS">Tour B-RXS</td>
+                <td><input type="checkbox" name="Soft Feel" value="Soft Feel">Soft Feel</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="AA" value="AA">AA (Average Condition)</td>
+                <td><input type="checkbox" name="Purple" value="Purple">Purple</td>
+                <td><input type="checkbox" name="Tour Speed" value="Tour Speed">Tour Speed</td>
+                <td><input type="checkbox" name="Superhot" value="Superhot">Superhot</td>
+                <td><input type="checkbox" name="Distance Plus" value="Distance Plus">Distance Plus</td>
+                <td><input type="checkbox" name="Contact" value="Contact">Contact</td>
+                <td><input type="checkbox" name="AD333" value="AD333">AD333</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="A" value="A">A (Poor Condition)</td>
+                <td><input type="checkbox" name="Gold" value="Gold">Gold</td>
+                <td><input type="checkbox" name="Tour Soft" value="Tour Soft">Tour Soft</td>
+                <td><input type="checkbox" name="HX Tour" value="HX Tour">HX Tour</td>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="Mix" value="Mix">Mix Condition</td>
+                <td><input type="checkbox" name="Multi-color" value="Multi-color">Multi-color</td>
+                <td><input type="checkbox" name="Velocity" value="Velocity">Velocity</td>
+                <td><input type="checkbox" name="Warbird" value="Warbird">Warbird</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+                <td><input type="checkbox" name="NXT Tour" value="NXT Tour">NXT Tour</td>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="checkbox" name="Soft Feel" value="Soft Feel">Soft Feel</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="checkbox" name="Supersoft" value="Supersoft">Supersoft</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Color</th>
+                <th>Wilson</th>
+                <th>Mizuno</th>
+                <th>Vice</th>
+                <th>Pinnacle</th>
+                <th>Top Flite</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="White" value="White">White</td>
+                <td><input type="checkbox" name="Staff Model" value="Staff Model">Staff Model</td>
+                <td><input type="checkbox" name="RB Tour" value="RB Tour">RB Tour</td>
+                <td><input type="checkbox" name="S4" value="S4">S4</td>
+                <td><input type="checkbox" name="Rush" value="Rush">Rush</td>
+                <td><input type="checkbox" name="Top Flite Gamer" value="Top Flite Gamer">Top Flite Gamer</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="Yellow" value="Yellow">Yellow</td>
+                <td><input type="checkbox" name="Staff Model R" value="Staff Model R">Staff Model R</td>
+                <td><input type="checkbox" name="RB Tour X" value="RB Tour X">RB Tour X</td>
+                <td><input type="checkbox" name="S3" value="S3">S3</td>
+                <td><input type="checkbox" name="Soft" value="Soft">Soft</td>
+                <td><input type="checkbox" name="Top Flite D2 + Diva" value="Top Flite D2 + Diva">Top Flite D2 + Diva</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="Red" value="Red">Red</td>
+                <td><input type="checkbox" name="Duo Soft+" value="Duo Soft+">Duo Soft+</td>
+                <td><input type="checkbox" name="RB566" value="RB566">RB566</td>
+                <td><input type="checkbox" name="Vivid" value="Vivid">Vivid</td>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+                <td><input type="checkbox" name="Top Flite D2 + Feel" value="Top Flite D2 + Feel">Top Flite D2 + Feel</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="Multi-color" value="Multi-color">Multi-color</td>
+                <td><input type="checkbox" name="Dou Optix" value="Dou Optix">Dou Optix</td>
+                <td><input type="checkbox" name="RB566V" value="RB566V">RB566V</td>
+                <td><input type="checkbox" name="Vivid Lite" value="Vivid Lite">Vivid Lite</td>
+                <td></td>
+                <td><input type="checkbox" name="Top Flite XL Distance" value="Top Flite XL Distance">Top Flite XL Distance</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+                <td><input type="checkbox" name="Chaos" value="Chaos">Chaos</td>
+                <td><input type="checkbox" name="JPX" value="JPX">JPX</td>
+                <td><input type="checkbox" name="Vivid XT" value="Vivid XT">Vivid XT</td>
+                <td></td>
+                <td><input type="checkbox" name="Top Flight XL Pure Distance" value="Top Flight XL Pure Distance">Top Flight XL Pure Distance</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+                <td></td>
+                <td><input type="checkbox" name="Mixture" value="Mixture">Mixture</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div id="find-button">
+      <input type="submit" value="Find" />
+  </div>   
+    </body>
+    </html>
+
+
+    </div>`;
+});
+</script>
+
+</body>
+</html>
